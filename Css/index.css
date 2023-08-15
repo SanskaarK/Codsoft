@@ -1,0 +1,216 @@
+body{
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Lora', serif;
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+/*  navbar styling */
+.navbar{
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    top: 10px;
+    height: 65px;
+    text-align: center;
+    align-items: center;
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    height: 65px;
+    width: 100vw;
+    opacity: 0.65;    
+    background-color: orange;
+    z-index: -5;
+}
+/* logo styling */
+.logo{
+    height: 60px;
+    border-radius: 50%;
+    width: 60px;
+    margin-left: 15px;
+}
+/* menu styling */
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* menu ki ul */
+.menu ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+/* menu ki font size */
+.menu ul li a{
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+}
+/* menu ka hover effect */
+.menu ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* home section */
+#home{
+    font-size: 1.5rem;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../images/bg.jpg') no-repeat center center/cover;
+    height: 613px;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.75;
+}
+/* services classes */
+.services-cont{
+    border-radius: 20px;
+    margin: 10px;
+    position: relative;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#services{
+    width: 100vw;
+    justify-content: space-evenly;
+    display: flex;
+    padding-bottom: 10px;
+}
+#services .box{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    text-align: center;
+    width: 22vw;
+    border-radius: 20px;
+    border: 2px solid orangered;
+}
+.box img{
+    margin: 15px;
+    width: 50%;
+    height: 35%;
+    border-radius: 50%;
+}
+
+/* clints section */
+#clint-section{
+    display: flex;
+    position: relative;
+    top: 60px;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#clint-section::before{
+    content: "";
+    position: absolute;
+    height: 252px;
+    top: 0px;
+    width: 100vw;
+    z-index: -1;
+    opacity: 0.75;
+    background: url("../images/Client.jpg") no-repeat center center/cover;
+}
+.clint-item{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.cl{
+    border: 2px solid orangered;
+    height: 15%;
+    width: 10%;
+    border-radius: 50%;
+}
+/* contact-section */
+#contact{
+    display: flex;
+    top: 120px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    border: 2px solid burlywood;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    opacity: 0.75;
+    background: url("../images/contact-us.jpg") no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.form-group{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+#contact-box button{
+    width: 150%;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 150%;
+    display: flex;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 6px;
+}
+#contact-box label{
+    font-size: 1.5rem;
+}
+
+/* footer */
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    top: 20vh;
+    margin-bottom: 30px;
+}
+
+/* utility class */
+.h-primery{
+    font-size: 1.75rem;
+    padding: 15px;
+}
+.btn{
+    color: white;
+    margin: 7px;
+    font-size: 1.25rem;
+    padding: 6px 40px;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 15px;
+    cursor: pointer;
+}
